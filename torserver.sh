@@ -37,12 +37,13 @@ sudo apt-get update -y
 sudo apt-get install tor deb.torproject.org-keyring nyx -y
 
 # Configure Tor
-echo 'Nickname    Left4Dead2  # Change "myNiceRelay" to something you like
+echo 'Nickname    AeonDisk # Change "myNiceRelay" to something you like
 # Write your e-mail and be aware it will be published
 ORPort      443          # You might use a different port, should you want to
 ExitRelay   0
 SocksPort   0
-ControlPort 6942' | sudo tee /etc/tor/torrc > /dev/null
+ControlPort 6942
+MyFamily B11E486834F4BFCB4EB2B59E24580FA0E71499A6' | sudo tee /etc/tor/torrc > /dev/null
 
 # Step 5: Restart the Tor service
 sudo systemctl restart tor@default
