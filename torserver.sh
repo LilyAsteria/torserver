@@ -43,7 +43,7 @@ ORPort      443          # You might use a different port, should you want to
 ExitRelay   0
 SocksPort   0
 ControlPort 6942
-MyFamily B11E486834F4BFCB4EB2B59E24580FA0E71499A6' | sudo tee /etc/tor/torrc > /dev/null
+MyFamily 940AFB8E6535FD62A7FC704DCEEE82045EE8B467' | sudo tee /etc/tor/torrc > /dev/null
 
 # Step 5: Restart the Tor service
 sudo systemctl restart tor@default
